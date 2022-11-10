@@ -18,4 +18,5 @@ ramApp.init = () => {
     ramApp.getCharacter()
 }
 
+
 ramApp.init()
