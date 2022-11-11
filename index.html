@@ -8,10 +8,51 @@
 </head>
 <body>
     <header>
-        <h1>
-            API TEST
-        </h1>
+        <div class="wrapper">
+            <h1>
+                Rick and Morty Characters
+            </h1>
+        </div>
     </header>
+     <main>
+        <div class="wrapper">
+            <section class="aboutSection">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum optio distinctio, quia, suscipit maiores quam sapiente, dignissimos quas vitae assumenda animi repellendus at dolorem veniam labore incidunt delectus placeat est!</p>
+    
+                <fieldset>
+                    <form action="">
+                        <label for="characterDropdown">Choose your Character </label>
+                        <select name="character" id="character">
+                            <option value="1">Rick</option>
+                            <option value="2">Morty</option>
+                            <option value="3">Summer</option>
+                            <option value="4">Beth</option>
+                            <option value="5">Jerry</option>
+                        </select>
+                    </form>
+                </fieldset>
+            </section>
+        </div>
+
+        <section>
+            <div class="wrapper"> <!-- WRAPPER DIV -->
+                <div class="characterCard"> <!-- Charactercard DIV -->
+                    <div class="imgContainer"> <!-- imgContainer -->
+                        <img src="https://placebear.com/200/200" alt="Rick">
+                    </div><!-- imgContainer END -->
+                    <div class="characterInfo">
+                        <p>Name</p>
+                        <p>Specices</p>
+                        <p>gender</p>
+                        <p>Episode First appeared in</p>
+                    </div><!-- END  character info -->
+                </div><!-- charactercard END -->
+            </div><!-- wrapper div -->
+        </section>
+     </main>
+     <footer>
+        <p>BY AIDEN & DAMAN </p>
+     </footer>
 
     <script src="appApi.js"></script>
 </body>
