@@ -8,13 +8,14 @@
 const ramApp = {};
 
 
-ramApp.getCharacter = () => {
+ramApp.getCharacter = (userSelection) => {
 
     const url = new URL('https://rickandmortyapi.com/api/character');
 
     // Search Params
     url.search = new URLSearchParams ({
         id: 1
+        
     })
 
     fetch(url)
@@ -22,26 +23,36 @@ ramApp.getCharacter = () => {
         return res.json();
     })
     .then ((data) =>{
-        console.log(data.results)
+        // console.log(data.results)
         document.querySelector('#characterCard')
         // .innerHTML = "";
-    })
+        console.log(data.results[0].name)
+        // const characterOptions = data.results[userSelection].name
+        
 
+
+        
+    })
 }
-    // event listener on dropdown menu
-    const character = document.querySelector('#character');
-    character.addEventListener('change', function() {
-        console.log(this.value)
+
+// created var for dropdown menu
+const character = document.querySelector('#character');
+
+//addevent listener on the dropdown
+character.addEventListener('change', function() {
+    
+    // function to display user selection
+    const userSelection = this.value
+    console.log(userSelection)
+    ramApp.getCharacter(userSelection)
+
+    
     })
 
 
-
-
-
-console.log('featuretest')
 
 ramApp.init = () => {
-    console.log('yea');
+    // console.log('yea');
     ramApp.getCharacter()
 }
 
