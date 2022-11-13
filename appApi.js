@@ -34,11 +34,22 @@ ramApp.getCharacter = (selection) => {
 
             //display selected img
             const characterImg = data.results[this.value].image;
+            // Display selected name
+            const characterName = data.results[this.value].name;
+            const characterSpecies = data.results[this.value].species;
+            const characterGender = data.results[this.value].gender;
+            const firstEp = data.results[this.value].episode[0];
             const characterCardEl = document.querySelector('#characterCard');
             
-            characterCardEl.innerHTML = `<div class="imgContainer"> 
+            characterCardEl.innerHTML = `<div class="imgContainer"> <!-- imgContainer -->
             <img src="${characterImg}" alt="Rick">
-            </div>`;
+        </div><!-- imgContainer END -->
+        <div class="characterInfo">
+            <p>${characterName}</p>
+            <p>${characterSpecies}</p>
+            <p>${characterGender}</p>
+            <p>${firstEp}</p>
+        </div><!-- END  character info -->`;
             
             // const characterSpeices = data.results[this.value].species;
 
