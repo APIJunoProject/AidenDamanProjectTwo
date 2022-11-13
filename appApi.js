@@ -27,29 +27,30 @@ ramApp.getCharacter = (selection) => {
         })
         .then ((data) =>{
             console.log(data.results);
+
+            // save user selection to parameter 
              selection = data.results[this.value].name;
             console.log(selection);
+
+            //display selected img
             const characterImg = data.results[this.value].image;
-            const characterSpeices = data.results[this.value].species;
-            const characterCard = document.querySelector('#characterCard');
-
-            characterCard.innerHTML = `<div class="imgContainer"> 
+            const characterCardEl = document.querySelector('#characterCard');
+            
+            characterCardEl.innerHTML = `<div class="imgContainer"> 
             <img src="${characterImg}" alt="Rick">
-        </div>`;
-
+            </div>`;
+            
+            // const characterSpeices = data.results[this.value].species;
 
         })
 
-        return selection
+        
     })
 }
 
 ramApp.getCharacter();
 
 
-console.log('featuretest')
-
 ramApp.init = () => {
-
 
 }
