@@ -10,16 +10,16 @@ const ramApp = {};
 ramApp.getCharacter = (selection) => {
 
     const url = new URL('https://rickandmortyapi.com/api/character');
-    const character = document.querySelector('#character');
+    const dropdown = document.querySelector('#character');
+    // const urlEp = new URL('https://rickandmortyapi.com/api/episode');
 
     // Search Params
-    url.search = new URLSearchParams ({
-        id: 1
-    })
+    // url.search = new URLSearchParams ({
+    //     id: 1
+    // })
 
-    
     // event listener on dropdown menu
-    character.addEventListener('change', function() {
+    dropdown.addEventListener('change', function() {
 
         fetch(url)
         .then( (res) => {
