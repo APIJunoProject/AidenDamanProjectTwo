@@ -43,13 +43,13 @@ ramApp.getCharacter = (selection) => {
             
             characterCardEl.innerHTML = `<div class="imgContainer"> <!-- imgContainer -->
             <img src="${characterImg}" alt="Rick">
-        </div><!-- imgContainer END -->
+        </div> <!-- imgContainer END -->
         <div class="characterInfo">
             <p>${characterName}</p>
             <p>${characterSpecies}</p>
             <p>${characterGender}</p>
             <p>${firstEp}</p>
-        </div><!-- END  character info -->`;
+        </div> <!-- characterInfo END -->`;
             
             // const characterSpeices = data.results[this.value].species;
 
