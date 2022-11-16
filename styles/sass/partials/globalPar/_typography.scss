@@ -4,7 +4,7 @@ h1 {
     font-family: variables.$mainHeading;
 }
 
-p, fieldset {
+p, fieldset, select, option {
     font-family: variables.$cardText;
 }
 

@@ -278,7 +278,7 @@ h1 {
   font-family: "Creepster", cursive;
 }
 
-p, fieldset {
+p, fieldset, select, option {
   font-family: "Roboto", sans-serif;
 }
 
