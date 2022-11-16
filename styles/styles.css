@@ -1,3 +1,51 @@
+.characterBackground {
+  background-color: #81d1d1;
+  padding: 10vh 0;
+}
+.characterBackground .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.characterBackground .wrapper .characterCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a5e5e8;
+  width: 400px;
+  border-radius: 3%;
+  padding: 40px;
+  border: 2px #4f6367 solid;
+}
+.characterBackground .wrapper .characterCard .imgContainer img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 3%;
+  border: 2px #4f6367 solid;
+}
+.characterBackground .wrapper .characterCard .characterInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -224,4 +272,46 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+h1 {
+  font-family: "Creepster", cursive;
+}
+
+p, fieldset {
+  font-family: "Roboto", sans-serif;
+}
+
+.name {
+  font-size: 1.1rem;
+}
+
+/* GENERAL STYLES */
+html {
+  font-size: 125%;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
 }

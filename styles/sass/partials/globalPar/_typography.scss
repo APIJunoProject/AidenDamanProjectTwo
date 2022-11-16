@@ -1,0 +1,13 @@
+@use  "../globalPar/variables";
+
+h1 {
+    font-family: variables.$mainHeading;
+}
+
+p, fieldset {
+    font-family: variables.$cardText;
+}
+
+.name {
+    font-size: 1.1rem;
+}
