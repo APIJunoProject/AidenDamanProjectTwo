@@ -1,3 +1,12 @@
+h1 {
+  font-family: "Creepster", cursive;
+  color: #00A7BE;
+  text-align: center;
+  padding-top: 2rem;
+  text-shadow: rgb(0, 255, 9) 0px 0px 3px;
+  font-size: 4rem;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
