@@ -1,4 +1,12 @@
-<<<<<<< HEAD
+h1 {
+  font-family: "Creepster", cursive;
+  color: #00A7BE;
+  text-align: center;
+  padding-top: 2rem;
+  text-shadow: rgb(0, 255, 9) 0px 0px 3px;
+  font-size: 4rem;
+}
+
 .characterBackground {
   background-color: #81d1d1;
   padding: 10vh 0;
@@ -45,15 +53,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-=======
-h1 {
-  font-family: "Creepster", cursive;
-  color: #00A7BE;
-  text-align: center;
-  padding-top: 2rem;
-  text-shadow: rgb(0, 255, 9) 0px 0px 3px;
-  font-size: 4rem;
->>>>>>> aidenFeature
 }
 
 html {
