@@ -1,0 +1,32 @@
+@use "./globalPar/variables";
+
+.aboutSection {
+    p {
+        text-align: center;
+        a {
+            color: variables.$darkBlueGreen;
+            text-decoration: underline;
+        }
+    }
+
+    fieldset {
+        border: none;
+        display: flex;
+        justify-content: center;
+        form {
+            display: flex;
+            flex-direction: column;
+            select {
+                text-align: center;
+                margin-top: 20px;
+                // box-shadow: rgba(0,255,9,1) 0px 0px 10px;
+                background-color: variables.$lightBlue;
+                color: variables.$black;
+                border: 2px solid variables.$grey;
+                padding: 10px 0;
+            }
+        }
+    }
+
+}
+

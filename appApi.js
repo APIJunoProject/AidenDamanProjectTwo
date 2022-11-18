@@ -9,17 +9,16 @@ const ramApp = {};
 
 ramApp.getCharacter = (selection) => {
 
-    const url = new URL('https://rickandmortyapi.com/api/character');
+    const url = new URL('https://rickandmortyapi.com/api/character/');
     const dropdown = document.querySelector('#character');
     // const urlEp = new URL('https://rickandmortyapi.com/api/episode');
 
     // Search Params
     // url.search = new URLSearchParams ({
-    //    name: 'Mr. Meeseeks'
-    //    })
+    //     page: 13
+    // })
 
-    console.log(url);
-
+    // console.log(url.search)
     // event listener on dropdown menu
     dropdown.addEventListener('change', function() {
 
@@ -28,11 +27,8 @@ ramApp.getCharacter = (selection) => {
             return res.json();
         })
         .then ((data) =>{
-            console.log(data.results);
-            console.log(data);
-
             // save user selection to parameter 
-             selection = data.results[this.value].name;
+            selection = data.results[this.value].name;
             console.log(selection);
 
             //display selected img
