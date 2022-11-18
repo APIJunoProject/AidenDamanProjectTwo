@@ -15,8 +15,10 @@ ramApp.getCharacter = (selection) => {
 
     // Search Params
     // url.search = new URLSearchParams ({
-    //     id: 1
-    // })
+    //    name: 'Mr. Meeseeks'
+    //    })
+
+    console.log(url);
 
     // event listener on dropdown menu
     dropdown.addEventListener('change', function() {
@@ -27,6 +29,7 @@ ramApp.getCharacter = (selection) => {
         })
         .then ((data) =>{
             console.log(data.results);
+            console.log(data);
 
             // save user selection to parameter 
              selection = data.results[this.value].name;
