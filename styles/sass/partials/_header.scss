@@ -1,13 +1,20 @@
 @use "./globalPar/variables";
 
+header {
+    padding: 40px 0;
+    font-size: 30px;
+    border-bottom: 2px solid variables.$grey;
+}
+
 h1 {
     font-family: variables.$mainHeading;
     color: variables.$darkBlueGreen;
     text-align: center;
-    padding-top: 2rem;
     text-shadow: rgba(0,255,9,1) 0px 0px 3px;
-    font-size: 4rem;
+    
 }
+
+
 
 
 

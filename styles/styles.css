@@ -1,10 +1,48 @@
+header {
+  padding: 40px 0;
+  font-size: 30px;
+  border-bottom: 2px solid #4f6367;
+}
+
 h1 {
   font-family: "Creepster", cursive;
   color: #00A7BE;
   text-align: center;
-  padding-top: 2rem;
   text-shadow: rgb(0, 255, 9) 0px 0px 3px;
-  font-size: 4rem;
+}
+
+.aboutSection p {
+  text-align: center;
+}
+.aboutSection p a {
+  color: #00A7BE;
+  text-decoration: underline;
+}
+.aboutSection fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aboutSection fieldset form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.aboutSection fieldset form select {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #a5e5e8;
+  color: #0c1618;
+  border: 2px solid #4f6367;
+  padding: 10px 0;
 }
 
 .characterBackground {
@@ -283,7 +321,7 @@ html {
   overflow: hidden;
 }
 
-h1 {
+header h1 {
   font-family: "Creepster", cursive;
 }
 
@@ -293,6 +331,11 @@ p, fieldset {
 
 .name {
   font-size: 1.1rem;
+}
+
+.aboutSection p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
 }
 
 /* GENERAL STYLES */
@@ -323,4 +366,8 @@ img {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+header, .aboutSection {
+  background-color: #9BC1BC;
 }
