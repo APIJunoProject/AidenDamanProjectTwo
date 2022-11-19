@@ -42,18 +42,19 @@ ramApp.getCharacter = (selection) => {
             const firstEp = data[this.value].episode[0];
             const characterCardEl = document.querySelector('#characterCard');
             const characterStatus = data[this.value].status
+            const characterLocation = data[this.value].location.name
 
             characterCardEl.innerHTML = `<div class="imgContainer"> <!-- imgContainer -->
             <img src="${characterImg}" alt="Rick">
             </div> 
             <div class="characterInfo">
             <p class="name">${characterName}</p>
-            <p>${characterStatus}</p>
+            <p class="status">${characterStatus}</p>
             <div class="inline">
             <p>${characterSpecies}</p>
             <p>${characterGender}</p>
             </div>
-            <p>First Episode Appeared in:${firstEp}</p>
+            <p>Last Seen: ${characterLocation}</p>
             </div>`;
             
             
@@ -72,3 +73,5 @@ ramApp.getCharacter();
 ramApp.init = () => {
 
 }
+
+
