@@ -92,6 +92,17 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
 }
+.characterBackground .wrapper .characterCard .characterInfo p {
+  padding: 10px 0;
+}
+.characterBackground .wrapper .characterCard .characterInfo .inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
 
 html {
   line-height: 1.15;
@@ -331,6 +342,7 @@ p, fieldset, select, option {
 
 .name {
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .aboutSection p {

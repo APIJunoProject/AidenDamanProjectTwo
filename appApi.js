@@ -9,13 +9,13 @@ const ramApp = {};
 
 ramApp.getCharacter = (selection) => {
 
-    const url = new URL('https://rickandmortyapi.com/api/character/');
+    const url = new URL('https://rickandmortyapi.com/api/character/1,2,3,4,5,242');
     const dropdown = document.querySelector('#character');
     // const urlEp = new URL('https://rickandmortyapi.com/api/episode');
 
     // Search Params
     // url.search = new URLSearchParams ({
-    //     page: 13
+       
     // })
 
     // console.log(url.search)
@@ -27,28 +27,35 @@ ramApp.getCharacter = (selection) => {
             return res.json();
         })
         .then ((data) =>{
+            console.log(data);
+
             // save user selection to parameter 
-            selection = data.results[this.value].name;
+            selection = data[this.value].name;
             console.log(selection);
 
             //display selected img
-            const characterImg = data.results[this.value].image;
+            const characterImg = data[this.value].image;
             // Display selected name
-            const characterName = data.results[this.value].name;
-            const characterSpecies = data.results[this.value].species;
-            const characterGender = data.results[this.value].gender;
-            const firstEp = data.results[this.value].episode[0];
+            const characterName = data[this.value].name;
+            const characterSpecies = data[this.value].species;
+            const characterGender = data[this.value].gender;
+            const firstEp = data[this.value].episode[0];
             const characterCardEl = document.querySelector('#characterCard');
-            
+            const characterStatus = data[this.value].status
+
             characterCardEl.innerHTML = `<div class="imgContainer"> <!-- imgContainer -->
             <img src="${characterImg}" alt="Rick">
-        </div> <!-- imgContainer END -->
-        <div class="characterInfo">
-            <p>${characterName}</p>
+            </div> 
+            <div class="characterInfo">
+            <p class="name">${characterName}</p>
+            <p>${characterStatus}</p>
+            <div class="inline">
             <p>${characterSpecies}</p>
             <p>${characterGender}</p>
-            <p>${firstEp}</p>
-        </div> <!-- characterInfo END -->`;
+            </div>
+            <p>First Episode Appeared in:${firstEp}</p>
+            </div>`;
+            
             
             // const characterSpeices = data.results[this.value].species;
 
@@ -57,6 +64,7 @@ ramApp.getCharacter = (selection) => {
         
     })
 }
+ 
 
 ramApp.getCharacter();
 
