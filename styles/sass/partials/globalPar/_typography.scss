@@ -15,5 +15,11 @@ p, fieldset, select, option {
 
 .aboutSection p {
     font-family: variables.$subHeading;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+}
+
+footer {
+    p {
+        font-family: variables.$footerText;
+    }
 }
