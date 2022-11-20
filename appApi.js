@@ -9,7 +9,7 @@ const ramApp = {};
 
 ramApp.getCharacter = (selection) => {
 
-    const url = new URL('https://rickandmortyapi.com/api/character/1,2,3,4,5,242');
+    const url = new URL('https://rickandmortyapi.com/api/character/1,2,3,4,5,242,89');
     const dropdown = document.querySelector('#character');
     // const urlEp = new URL('https://rickandmortyapi.com/api/episode');
 
@@ -20,7 +20,7 @@ ramApp.getCharacter = (selection) => {
 
     // console.log(url.search)
     // event listener on dropdown menu
-    dropdown.addEventListener('change', function() {
+   const fetchCall = dropdown.addEventListener('change', function() {
 
         fetch(url)
         .then( (res) => {
@@ -28,6 +28,7 @@ ramApp.getCharacter = (selection) => {
         })
         .then ((data) =>{
             console.log(data);
+
 
             // save user selection to parameter 
             selection = data[this.value].name;
@@ -44,6 +45,7 @@ ramApp.getCharacter = (selection) => {
             const characterStatus = data[this.value].status
             const characterLocation = data[this.value].location.name
 
+            
             characterCardEl.innerHTML = `<div class="imgContainer"> <!-- imgContainer -->
             <img src="${characterImg}" alt="Rick">
             </div> 
@@ -56,18 +58,30 @@ ramApp.getCharacter = (selection) => {
             </div>
             <p>Last Seen: ${characterLocation}</p>
             </div>`;
+        
             
-            
+            return data
             // const characterSpeices = data.results[this.value].species;
-
+            
+            // statusToggle = () => {
+            //     const  statusIcon = document.querySelector('.status::before');
+            //     if (characterStatus === 'Alive') {
+            //         statusIcon.style.color = 'red'
+            //     }
+            // }
+            // statusToggle()
         })
 
         
+        console.log(fetchCall)
     })
 }
+
+
  
 
 ramApp.getCharacter();
+
 
 
 ramApp.init = () => {
