@@ -116,14 +116,6 @@ h1 {
   width: 100%;
 }
 
-<<<<<<< HEAD
-footer {
-  background-color: #a5e5e8;
-}
-footer p {
-  padding: 5px;
-  text-align: center;
-=======
 .status::before {
   content: "";
   width: 12px;
@@ -135,7 +127,14 @@ footer p {
   left: -17px;
   top: 4px;
   border: 1px solid #4f6367;
->>>>>>> stretchGoalFeature
+}
+
+footer {
+  background-color: #a5e5e8;
+}
+footer p {
+  padding: 5px;
+  text-align: center;
 }
 
 html {
