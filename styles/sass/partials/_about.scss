@@ -3,6 +3,8 @@
 .aboutSection {
     p {
         text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
         a {
             color: variables.$darkBlueGreen;
             text-decoration: underline;
@@ -19,7 +21,6 @@
             select {
                 text-align: center;
                 margin-top: 20px;
-                // box-shadow: rgba(0,255,9,1) 0px 0px 10px;
                 background-color: variables.$lightBlue;
                 color: variables.$black;
                 border: 2px solid variables.$grey;

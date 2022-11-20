@@ -1,0 +1,9 @@
+@use "./globalPar/variables";
+
+footer {
+    background-color: variables.$lightBlue;
+    p {
+        padding: 5px;
+        text-align: center;
+    }
+}
