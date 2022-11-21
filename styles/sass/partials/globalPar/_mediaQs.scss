@@ -19,7 +19,13 @@
             border: none;
             border-top: 2px solid variables.$grey;
             border-bottom: 2px solid variables.$grey;
+
+            .characterInfo {
+                max-width: 290px;
+            }
         }
     }
-    
+    .icon {
+        left:110px;
+    }
 }

@@ -386,6 +386,12 @@ html {
     border-top: 2px solid #4f6367;
     border-bottom: 2px solid #4f6367;
   }
+  .characterBackground .wrapper .characterCard .characterInfo {
+    max-width: 290px;
+  }
+  .icon {
+    left: 110px;
+  }
 }
 header h1 {
   font-family: "Creepster", cursive;
