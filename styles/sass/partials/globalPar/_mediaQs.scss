@@ -1,0 +1,25 @@
+@use '../globalPar/variables';
+
+
+@media (max-width: 545px) {
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .aboutSection label {
+        text-align: center;
+    }
+
+    .characterBackground .wrapper  {
+        width:100%;
+        .characterCard {
+            width: 100%;
+            border-radius: 0;
+            border: none;
+            border-top: 2px solid variables.$grey;
+            border-bottom: 2px solid variables.$grey;
+        }
+    }
+    
+}

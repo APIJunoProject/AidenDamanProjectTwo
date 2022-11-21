@@ -45,11 +45,13 @@ h1 {
   color: #0c1618;
   border: 2px solid #4f6367;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .characterBackground {
   background-color: #81d1d1;
   padding: 10vh 0;
+  border-bottom: 2px solid #4f6367;
 }
 .characterBackground .wrapper {
   display: -webkit-box;
@@ -94,12 +96,8 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-}
-.characterBackground .wrapper .characterCard .characterInfo .status {
-  padding: 0;
   position: relative;
-  font-style: italic;
-  font-size: 0.9rem;
+  width: 350px;
 }
 .characterBackground .wrapper .characterCard .characterInfo .name {
   padding-bottom: 0;
@@ -116,17 +114,23 @@ h1 {
   width: 100%;
 }
 
-.status::before {
-  content: "";
+.icon {
+  position: absolute;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: lightgreen;
-  display: block;
-  position: absolute;
-  left: -17px;
-  top: 4px;
+  display: inline-block;
   border: 1px solid #4f6367;
+  top: 48px;
+  left: 143px;
+}
+
+.status {
+  padding: 0;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin-left: 8px;
 }
 
 footer {
@@ -365,6 +369,24 @@ html {
   overflow: hidden;
 }
 
+@media (max-width: 545px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .aboutSection label {
+    text-align: center;
+  }
+  .characterBackground .wrapper {
+    width: 100%;
+  }
+  .characterBackground .wrapper .characterCard {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    border-top: 2px solid #4f6367;
+    border-bottom: 2px solid #4f6367;
+  }
+}
 header h1 {
   font-family: "Creepster", cursive;
 }
