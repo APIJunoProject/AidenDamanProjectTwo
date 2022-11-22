@@ -20,7 +20,7 @@ ramApp.getCharacter = (selection) => {
 
     // console.log(url.search)
     // event listener on dropdown menu
-   const fetchCall = dropdown.addEventListener('change', function() {
+     dropdown.addEventListener('change', function() {
 
         fetch(url)
         .then( (res) => {
@@ -51,6 +51,7 @@ ramApp.getCharacter = (selection) => {
             </div> 
             <div class="characterInfo">
             <p class="name">${characterName}</p>
+            <span class="statusIcon"> </span>
             <p class="status">${characterStatus}</p>
             <div class="inline">
             <p>${characterSpecies}</p>
@@ -60,20 +61,21 @@ ramApp.getCharacter = (selection) => {
             </div>`;
         
             
-            return data
-            // const characterSpeices = data.results[this.value].species;
+            const characterSpeices = data[this.value].species;
             
-            // statusToggle = () => {
-            //     const  statusIcon = document.querySelector('.status::before');
-            //     if (characterStatus === 'Alive') {
-            //         statusIcon.style.color = 'red'
-            //     }
-            // }
-            // statusToggle()
+            statusToggle = () => {
+                const statusIcon = document.querySelector('.statusIcon');
+                console.log(statusIcon);
+                console.log(characterStatus)
+                if (characterStatus === 'Dead') {
+                    statusIcon.style.backgroundColor = 'red'
+                }
+            }
+            statusToggle()
         })
 
         
-        console.log(fetchCall)
+        
     })
 }
 
