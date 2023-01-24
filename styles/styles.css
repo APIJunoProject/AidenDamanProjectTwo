@@ -115,14 +115,14 @@ h1 {
 }
 
 .statusIcon {
-  width: 25px;
-  height: 22px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: lightgreen;
   display: block;
   position: relative;
-  left: -17px;
-  top: 4px;
+  left: -43px;
+  top: 18px;
   border: 1px solid #4f6367;
 }
 
