@@ -17,7 +17,18 @@ ramApp.getCharacter = (selection) => {
     
     
 
+<<<<<<< HEAD
  dropdown.addEventListener('change', function() {
+=======
+    // Search Params
+    // url.search = new URLSearchParams ({
+       
+    // })
+
+    // console.log(url.search)
+    // event listener on dropdown menu
+     dropdown.addEventListener('change', function() {
+>>>>>>> stretchGoalFeature
 
         fetch(url)
         .then( (res) => {
@@ -44,16 +55,41 @@ ramApp.getCharacter = (selection) => {
             </div> 
             <div class="characterInfo">
             <p class="name">${characterName}</p>
+<<<<<<< HEAD
             <span id="icon" class="icon"></span><p class="status" id="status">${characterStatus}</p>
+=======
+            <span class="statusIcon"> </span>
+            <p class="status">${characterStatus}</p>
+>>>>>>> stretchGoalFeature
             <div class="inline">
             <p>${characterSpecies}</p>
             <p>${characterGender}</p>
             </div>
             <p>Last Known Location: ${characterLocation}</p>
             </div>`;
+<<<<<<< HEAD
 
             
         })
+=======
+        
+            
+            const characterSpeices = data[this.value].species;
+            
+            statusToggle = () => {
+                const statusIcon = document.querySelector('.statusIcon');
+                console.log(statusIcon);
+                console.log(characterStatus)
+                if (characterStatus === 'Dead') {
+                    statusIcon.style.backgroundColor = 'red'
+                }
+            }
+            statusToggle()
+        })
+
+        
+        
+>>>>>>> stretchGoalFeature
     })
 }
 
