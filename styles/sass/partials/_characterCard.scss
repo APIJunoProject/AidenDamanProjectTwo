@@ -10,6 +10,7 @@
             justify-content: center;
 
 
+
             .characterCard {
                 display: flex;
                 flex-direction: column;
@@ -56,25 +57,13 @@
         }
 
     }
-<<<<<<< HEAD
-    .icon {
+    .statusIcon {
         position:absolute;
         width: 12px;
         height: 12px;
         border-radius: 50%;
         background-color: lightgreen;
         display: inline-block;
-=======
-    .statusIcon {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: lightgreen;
-        display: block;
-        position: relative;
-        left: -43px;
-        top: 18px;
->>>>>>> stretchGoalFeature
         border: 1px solid variables.$grey;
         top: 48px;
         left: 143px;

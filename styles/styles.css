@@ -11,6 +11,10 @@ h1 {
   text-shadow: rgb(0, 255, 9) 0px 0px 3px;
 }
 
+fieldset {
+  font-size: 1.5rem;
+}
+
 .aboutSection p {
   text-align: center;
   padding-top: 30px;
@@ -114,25 +118,13 @@ h1 {
   width: 100%;
 }
 
-<<<<<<< HEAD
-.icon {
+.statusIcon {
   position: absolute;
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: lightgreen;
   display: inline-block;
-=======
-.statusIcon {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: lightgreen;
-  display: block;
-  position: relative;
-  left: -43px;
-  top: 18px;
->>>>>>> stretchGoalFeature
   border: 1px solid #4f6367;
   top: 48px;
   left: 143px;
